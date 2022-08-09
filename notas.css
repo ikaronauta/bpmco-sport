@@ -1,0 +1,22 @@
+.section {
+  background-color: var(--third-color);
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 80vh;
+  color: rgb(238, 236, 236);
+  font-size: 1.5rem;
+}
+
+.gridRutinas {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.gridRutinas div {
+  background-color: var(--main-color);
+  height: 10rem;
+  border-radius: 5px;
+  color: var(--dark-color);
+}
