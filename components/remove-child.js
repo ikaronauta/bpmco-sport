@@ -1,6 +1,7 @@
-const d = document;
+const root = document.getElementById("root");
 
 export function removeChild() {
-  if (d.getElementById("container").hasChildNodes())
-    d.getElementById("container");
+  console.log(root.hasChildNodes());
+  if (root.hasChildNodes()) root.childNodes[0].remove;
+  debugger;
 }

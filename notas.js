@@ -1,16 +1,28 @@
 let contenedorPrincipal = d.createElement("div");
 contenedorPrincipal.classList.add("introduccion-contenedor-principal");
-// let h1 = d.createElement("h1");
-// let titulo = d.createTextNode("Introducción");
-// h1.appendChild(titulo);
-// contenedorPrincipal.appendChild(h1);
 
-// let section = d.createElement("div");
-// section.classList.add("introduccion-section");
+let tituloPrincipal = d.createElement("h1");
+let contenidoTituloPrincipal = d.createTextNode("Introducción");
 
-// let contenido = d.createElement("p");
+tituloPrincipal.appendChild(contenidoTituloPrincipal);
 
-// section.appendChild(containerTitle);
-// containerSection.appendChild(section);
+let contenedorSecundario = d.createElement("div");
+contenedorSecundario.classList.add("introduccion-contenedor-secundario");
 
+let contenedorContenido = d.createElement("div");
+contenedorContenido.classList.add("introduccion-contenedor-contenido");
+let h2 = d.createElement("h2");
+let tituloIntroduccion = d.createTextNode(contenidoIntroduccion[0].titulo);
+let p = d.createElement("p");
+let mensajeIntroduccion = d.createTextNode(contenidoIntroduccion[0].contenido);
+h2.appendChild(tituloIntroduccion);
+p.appendChild(mensajeIntroduccion);
+
+contenedorContenido.appendChild(h2);
+contenedorContenido.appendChild(p);
+
+contenedorSecundario.appendChild(contenedorContenido);
+
+contenedorPrincipal.appendChild(tituloPrincipal);
+contenedorPrincipal.appendChild(contenedorSecundario);
 d.getElementById("root").appendChild(contenedorPrincipal);
