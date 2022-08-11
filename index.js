@@ -16,7 +16,7 @@ function eventos() {
   d.querySelector(".menu").addEventListener("click", () => item());
   d.getElementById("estiramiento").addEventListener(
     "click",
-    () => document.getElementById("root").remove
+    () => estiramiento()
   );
 }
 
