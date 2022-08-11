@@ -3,7 +3,7 @@ import { removeChild } from "../components/remove-child.js";
 import { estiramientos } from "./estiramientos.js";
 
 const d = document;
-const pathImg = "../images/estiramientos/";
+const pathImg = "images/estiramientos/";
 
 export function estiramiento(elemento) {
   removeChild();
@@ -14,7 +14,7 @@ export function estiramiento(elemento) {
 function crearContenedores(elemento) {
   let back = d.createElement("img");
   back.classList.add("estiramiento-atras");
-  back.src = "../images/icons/atras.png";
+  back.src = "images/icons/atras.png";
   back.setAttribute("alt", "Atras");
 
   let h2 = d.createElement("h2");

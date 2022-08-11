@@ -4,7 +4,7 @@ import { grid } from "../components/grid.js";
 import { estiramiento } from "./estiramiento.js";
 
 const d = document;
-const pathImg = "../images/estiramientos/";
+const pathImg = "images/estiramientos/";
 
 export function estiramientos() {
   removeChild();

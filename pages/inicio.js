@@ -2,7 +2,7 @@ import { contenidoIntroduccion } from "../assets/introduccion-contenido.js";
 import { removeChild } from "../components/remove-child.js";
 
 const d = document;
-const pathImg = "../images/inicio/";
+const pathImg = "images/inicio/";
 
 let ir = Math.floor(Math.random() * contenidoIntroduccion.length);
 
