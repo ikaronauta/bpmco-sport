@@ -1,4 +1,4 @@
-import { estiramientos } from "./components/estiramientos.js";
+import { estiramientos } from "./pages/estiramientos.js";
 import { inicio as init } from "./pages/inicio.js";
 import { item, menu } from "./components/menu-hamburguesa.js";
 import { removeChild } from "./components/remove-child.js";

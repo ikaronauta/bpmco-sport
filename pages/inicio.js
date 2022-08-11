@@ -23,6 +23,7 @@ function crearContenedores() {
   let img = d.createElement("img");
   img.classList.add("introduccion-img");
   img.src = pathImg + contenidoIntroduccion[ir].imagen;
+  img.setAttribute("alt", contenidoIntroduccion[ir].titulo);
 
   let contenedorTexto = d.createElement("div");
   contenedorTexto.classList.add("introduccion-contenedor-texto");

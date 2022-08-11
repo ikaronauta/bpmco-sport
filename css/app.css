@@ -41,7 +41,8 @@ header {
   background-color: var(--main-color);
 }
 
-.bpmco, .sport{
+.bpmco,
+.sport {
   cursor: pointer;
 }
 
@@ -54,6 +55,7 @@ header {
   background-color: var(--main-color);
   border-radius: 50%;
   padding: 0.8rem;
+  border: 3px solid var(--dark-color);
 }
 
 .open {
