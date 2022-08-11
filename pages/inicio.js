@@ -1,5 +1,5 @@
 import { contenidoIntroduccion } from "../assets/introduccion-contenido.js";
-import { removeChild } from "./remove-child.js";
+import { removeChild } from "../components/remove-child.js";
 
 const d = document;
 const pathImg = "../images/inicio/";
