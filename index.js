@@ -1,22 +1,25 @@
-import { estiramiento } from "./components/estiramiento.js";
-import { introduccion } from "./components/introduccion.js";
+import { estiramientos } from "./components/estiramientos.js";
+import { inicio as init } from "./components/inicio.js";
 import { item, menu } from "./components/menu-hamburguesa.js";
 import { removeChild } from "./components/remove-child.js";
 
 const d = document;
 
 function inicio() {
-  // removeChild();
+  removeChild();
   eventos();
-  introduccion();
+  init();
 }
 
 function eventos() {
+  d.querySelector(".bpmco").addEventListener("click", ()=> init());
+  d.querySelector(".sport").addEventListener("click", ()=> init());
   d.getElementById("menuContainer").addEventListener("click", () => menu());
   d.querySelector(".menu").addEventListener("click", () => item());
-  d.getElementById("estiramiento").addEventListener(
+  d.getElementById("inicio").addEventListener("click", ()=> init());
+  d.getElementById("estiramientos").addEventListener(
     "click",
-    () => estiramiento()
+    () => estiramientos()
   );
 }
 

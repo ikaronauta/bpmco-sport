@@ -1,28 +1,20 @@
-let contenedorPrincipal = d.createElement("div");
-contenedorPrincipal.classList.add("introduccion-contenedor-principal");
-
-let tituloPrincipal = d.createElement("h1");
-let contenidoTituloPrincipal = d.createTextNode("Introducción");
-
-tituloPrincipal.appendChild(contenidoTituloPrincipal);
-
-let contenedorSecundario = d.createElement("div");
-contenedorSecundario.classList.add("introduccion-contenedor-secundario");
-
-let contenedorContenido = d.createElement("div");
-contenedorContenido.classList.add("introduccion-contenedor-contenido");
 let h2 = d.createElement("h2");
-let tituloIntroduccion = d.createTextNode(contenidoIntroduccion[0].titulo);
+let tituloTarjeta = d.createTextNode(estiramientosData[0].nombre)
+h2.appendChild(tituloTarjeta);
+
+let img = d.createElement("img");
+img.classList.add("estiramientos-imagen-tarjeta");
+img.src = pathImg + estiramientosData[0].imagen;
+
 let p = d.createElement("p");
-let mensajeIntroduccion = d.createTextNode(contenidoIntroduccion[0].contenido);
-h2.appendChild(tituloIntroduccion);
-p.appendChild(mensajeIntroduccion);
+let tags = d.createTextNode(estiramientosData[0].tags.join(", "));
+p.appendChild(tags);
 
-contenedorContenido.appendChild(h2);
-contenedorContenido.appendChild(p);
+let contenedorTarjeta = d.createElement("div");
+contenedorTarjeta.classList.add("estiramientos-contenedor-tarjeta");
 
-contenedorSecundario.appendChild(contenedorContenido);
+contenedorTarjeta.appendChild(h2);
+contenedorTarjeta.appendChild(img);
+contenedorTarjeta.appendChild(tags);
 
-contenedorPrincipal.appendChild(tituloPrincipal);
-contenedorPrincipal.appendChild(contenedorSecundario);
-d.getElementById("root").appendChild(contenedorPrincipal);
+d.getElementById("root").appendChild(contenedorTarjeta);

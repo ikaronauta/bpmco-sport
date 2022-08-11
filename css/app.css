@@ -41,6 +41,10 @@ header {
   background-color: var(--main-color);
 }
 
+.bpmco, .sport{
+  cursor: pointer;
+}
+
 .item-menu-container {
   z-index: 999;
   position: fixed;

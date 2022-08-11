@@ -1,0 +1,33 @@
+.estiramientos-contenedor-principal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  gap: 2%;
+  justify-content: center;
+}
+
+.estiramientos-contenedor-tarjeta{
+  width: 280px;
+  height: 400px;
+  background-color: var(--ligth-color);
+  border-radius: 10px;
+  padding: 1%;
+  color: var(--dark-color);
+  margin: 1%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.estiramientos-contenedor-tarjeta h2{
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.estiramientos-imagen-tarjeta{
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}

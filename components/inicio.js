@@ -1,11 +1,13 @@
 import { contenidoIntroduccion } from "../assets/introduccion-contenido.js";
+import { removeChild } from "./remove-child.js";
 
 const d = document;
-const pathImg = "../images/introduccion/";
+const pathImg = "../images/inicio/";
 
 let ir = Math.floor(Math.random() * contenidoIntroduccion.length);
 
-export function introduccion() {
+export function inicio() {
+  removeChild();
   crearContenedores();
 }
 
