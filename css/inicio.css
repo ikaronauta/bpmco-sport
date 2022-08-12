@@ -26,8 +26,8 @@
 }
 
 .introduccion-contenedor-texto {
-  font-size: 1.15rem;
-  line-height: 1.7rem;
+  font-size: 1.5em;
+  line-height: 1.3em;
   color: var(--dark-color);
 }
 

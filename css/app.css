@@ -121,6 +121,14 @@ h1 {
   text-align: center;
 }
 
+.atras {
+  width: 4rem;
+  position: fixed;
+  bottom: 8rem;
+  right: 2.5rem;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     width: 90%;
