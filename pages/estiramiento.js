@@ -29,7 +29,7 @@ function crearContenedorPrincipal(elemento) {
 function crearContenedoresSecundarios(elemento, contenedorPrincipal) {
   let contenedorSecundario = d.createElement("div");
   contenedorSecundario.classList.add("estiramiento-contenedor-secundario");
-  
+
   let img = d.createElement("img");
   img.classList.add("estiramniento-img");
   img.src = pathImg + estiramientosData[elemento - 1].imagenVista;
@@ -42,7 +42,5 @@ function crearContenedoresSecundarios(elemento, contenedorPrincipal) {
 }
 
 function eventos() {
-  d.querySelector(".atras").addEventListener("click", () =>
-    estiramientos()
-  );
+  d.querySelector(".atras").addEventListener("click", () => estiramientos());
 }
