@@ -4,14 +4,14 @@
   color: var(--main-color);
 }
 
-.estiramiento-contenedor-secundario{
+.estiramiento-contenedor-secundario {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .estiramniento-img {
-  max-width: 60%;
+  width: 70%;
   max-height: auto;
   border-radius: 10px;
 }
