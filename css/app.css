@@ -111,7 +111,7 @@ header {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 2rem auto;
 }
 
@@ -135,12 +135,12 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 910px) {
   .container {
-    width: 90%;
+    width: 98%;
   }
 }

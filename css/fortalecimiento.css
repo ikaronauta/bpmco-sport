@@ -5,6 +5,8 @@
 }
 
 .fortalecimiento-contenedor-secundario {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +17,7 @@
 .fortalecimiento-contenedor-video {
   margin: 1rem 0;
   width: 60%;
+  height: auto;
 }
 
 .fortalecimiento-contenedor-texto {
@@ -25,7 +28,7 @@
   background-color: var(--ligth-color);
   color: var(--dark-color);
   border-radius: 10px;
-  height: 315px;
+  min-height: 315px;
   display: flex;
   align-items: center;
 }
@@ -34,6 +37,13 @@
   width: 100%;
   max-height: auto;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .fortalecimiento-contenedor-texto {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,6 +58,7 @@
 
   .fortalecimiento-contenedor-texto {
     width: 100%;
+    height: auto;
     padding: 5%;
     font-size: 1.3rem;
     line-height: 1.3em;
