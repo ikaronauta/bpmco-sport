@@ -4,7 +4,7 @@ import { removeChild } from "../components/remove-child.js";
 import { estiramientos } from "./estiramientos.js";
 
 const d = document;
-const pathImg = "images/estiramientos/";
+const pathImg = "images/estiramientos/vistas/";
 
 export function estiramiento(elemento) {
   removeChild();

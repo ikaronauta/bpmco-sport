@@ -1,15 +1,13 @@
-import { tarjetaGrid } from "../components/tarjetaGrid.js";
+// import { tarjetaGrid } from "../components/tarjetaGrid.js";
 import { buscador } from "./buscador.js";
+import { cargarGrid } from "./cargar-grid.js";
 
 const d = document;
 
 export function grid(array, pathImg) {
   crearContenedorGrid();
-  eventos(array);
-
-  array.map(function (elemento) {
-    tarjetaGrid(elemento, pathImg);
-  });
+  eventos(array, pathImg);
+  cargarGrid(array, pathImg);
 }
 
 function crearContenedorGrid() {
@@ -25,18 +23,8 @@ function crearContenedorGrid() {
   d.getElementById("root").appendChild(contenedorPrincipal);
 }
 
-function eventos(array) {
+function eventos(array, pathImg) {
   d.getElementById("buscador").addEventListener("keyup", function () {
-    cargarGrid(array);
-  });
-}
-
-function cargarGrid(array) {
-  let filtro = d.getElementById("buscador").value;
-
-  array.filter(function (item) {
-    let titulo = item.nombre.toLowerCase();
-
-    console.log(titulo.includes(filtro.toLowerCase()));
+    cargarGrid(array, pathImg);
   });
 }
