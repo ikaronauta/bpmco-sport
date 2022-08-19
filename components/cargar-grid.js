@@ -4,7 +4,6 @@ import { tarjetaGrid } from "./tarjetaGrid.js";
 const d = document;
 
 export function cargarGrid(array, pathImg, item) {
-  console.log(item);
   let criterioFiltro = d.getElementById("buscador").value.toLowerCase();
 
   d.querySelector(".contenedor-grid").innerHTML = "";

@@ -6,7 +6,7 @@ const d = document;
 
 export function grid(array, pathImg, item) {
   crearContenedorGrid();
-  eventos(array, pathImg);
+  eventos(array, pathImg, item);
   cargarGrid(array, pathImg, item);
 }
 
@@ -23,8 +23,8 @@ function crearContenedorGrid() {
   d.getElementById("root").appendChild(contenedorPrincipal);
 }
 
-function eventos(array, pathImg) {
+function eventos(array, pathImg, item) {
   d.getElementById("buscador").addEventListener("keyup", function () {
-    cargarGrid(array, pathImg);
+    cargarGrid(array, pathImg, item);
   });
 }
