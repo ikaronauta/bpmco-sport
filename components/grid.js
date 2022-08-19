@@ -4,10 +4,10 @@ import { cargarGrid } from "./cargar-grid.js";
 
 const d = document;
 
-export function grid(array, pathImg) {
+export function grid(array, pathImg, item) {
   crearContenedorGrid();
   eventos(array, pathImg);
-  cargarGrid(array, pathImg);
+  cargarGrid(array, pathImg, item);
 }
 
 function crearContenedorGrid() {

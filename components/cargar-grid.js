@@ -1,10 +1,10 @@
-import { estiramiento } from "../pages/estiramiento.js";
 import { cargarEventosTarjetas } from "./cargar-eventos-tarjetas.js";
 import { tarjetaGrid } from "./tarjetaGrid.js";
 
 const d = document;
 
-export function cargarGrid(array, pathImg) {
+export function cargarGrid(array, pathImg, item) {
+  console.log(item);
   let criterioFiltro = d.getElementById("buscador").value.toLowerCase();
 
   d.querySelector(".contenedor-grid").innerHTML = "";
@@ -18,5 +18,5 @@ export function cargarGrid(array, pathImg) {
     .map(function (elemento) {
       return tarjetaGrid(elemento, pathImg);
     });
-  cargarEventosTarjetas(estiramiento);
+  cargarEventosTarjetas(item);
 }
