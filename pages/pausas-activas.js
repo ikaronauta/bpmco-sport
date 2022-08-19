@@ -10,7 +10,7 @@ export function pausasActivas() {
 function proximamente() {
   let img = d.createElement("img");
   img.classList.add("pausasActivas-imagen");
-  img.src = "/images/pausas-activas/proximamente.png";
+  img.src = "images/pausas-activas/proximamente.png";
 
   let div = d.createElement("div");
   div.classList.add("pausasActivas-contenedor-principal");
