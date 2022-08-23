@@ -1,0 +1,39 @@
+.opciones-laterales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 4rem;
+}
+
+.icono-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+  width: 100%;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  border: 3px solid var(--dark-color);
+  padding: 3%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.icono-lateral-principal {
+  width: 70%;
+}
+
+.open {
+  content: url("../images/icons/menu.png");
+}
+
+.close {
+  content: url("../images/icons/menux.png");
+}
