@@ -1,6 +1,6 @@
 .opciones-laterales {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: end;
 
@@ -24,9 +24,10 @@
   padding: 3%;
   cursor: pointer;
   user-select: none;
+  margin-top: 5%;
 }
 
-.icono-lateral-principal {
+.icono-lateral {
   width: 70%;
 }
 

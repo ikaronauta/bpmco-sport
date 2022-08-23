@@ -1,4 +1,3 @@
-// import { tarjetaGrid } from "../components/tarjetaGrid.js";
 import { buscador } from "./buscador.js";
 import { cargarGrid } from "./cargar-grid.js";
 

@@ -1,5 +1,5 @@
 import { fortalecimientosData } from "../assets/fortalecimientos-data.js";
-import { itemAtras } from "../components/item-atras.js";
+import { opcionLateral } from "../components/opcion-lateral.js";
 import { removeChild } from "../components/remove-child.js";
 import { fortalecimientos } from "./fortalecimientos.js";
 
@@ -56,9 +56,12 @@ function crearContenedoresSecundarios(elemento, contenedorPrincipal) {
   contenedorSecundario.appendChild(img);
   contenedorPrincipal.appendChild(contenedorSecundario);
 
-  itemAtras(contenedorSecundario);
+  opcionLateral("images/icons/back.png", "back", "icono-lateral", null);
 }
 
 function eventos() {
-  d.querySelector(".atras").addEventListener("click", () => fortalecimientos());
+  d.getElementById("back").addEventListener("click", () => {
+    fortalecimientos();
+    d.getElementById("back").remove();
+  });
 }

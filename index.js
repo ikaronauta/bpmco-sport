@@ -9,12 +9,7 @@ import { opcionLateral } from "./components/opcion-lateral.js";
 const d = document;
 
 function inicio() {
-  opcionLateral(
-    null,
-    "icono-lateral-principal",
-    "icono-lateral-principal",
-    "open"
-  );
+  opcionLateral(null, "icono-lateral", "icono-lateral", "open");
   removeChild();
   eventos();
   init();
@@ -23,9 +18,7 @@ function inicio() {
 function eventos() {
   d.querySelector(".bpmco").addEventListener("click", () => init());
   d.querySelector(".sport").addEventListener("click", () => init());
-  d.getElementById("icono-lateral-principal").addEventListener("click", () =>
-    menu()
-  );
+  d.getElementById("icono-lateral").addEventListener("click", () => menu());
   d.querySelector(".menu").addEventListener("click", () => item());
   d.getElementById("inicio").addEventListener("click", () => init());
   d.getElementById("estiramientos").addEventListener("click", () =>
