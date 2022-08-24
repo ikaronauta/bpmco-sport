@@ -9,6 +9,8 @@ let cero;
 
 export function temporizador() {
   if (d.getElementById("panel-temporizador")) {
+    clearInterval(cronometro);
+    reiniciar();
     d.getElementById("panel-temporizador").remove();
   } else {
     let temporizador = d.createElement("div");
