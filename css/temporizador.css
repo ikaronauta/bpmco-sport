@@ -2,9 +2,41 @@
   position: fixed;
   left: 2rem;
   top: 8rem;
-  width: 7rem;
-  height: 3rem;
+  width: 8rem;
   background-color: var(--main-color);
   border: 3px solid var(--dark-color);
   border-radius: 10px;
+}
+
+.fila-temporizador,
+.fila-botones {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-datos {
+  width: 2rem;
+  height: 2rem;
+  margin: 5px 3px;
+  background-color: rgb(205, 211, 199);
+  border-radius: 5px;
+  border: 1px solid var(--dark-color);
+}
+
+.contenedor-boton {
+  width: 2rem;
+  height: 2rem;
+  margin: 5px 3px;
+  background-color: var(--ligth-color);
+  border-radius: 50%;
+  border: 1px solid var(--dark-color);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono {
+  width: 1rem;
 }
