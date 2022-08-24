@@ -1,13 +1,13 @@
 import { estiramientosData } from "../assets/estiramientos-data.js";
 import { opcionLateral } from "../components/opcion-lateral.js";
-import { removeChild } from "../components/remove-child.js";
+import { quitarHijos } from "../components/quitar-hijos.js";
 import { estiramientos } from "./estiramientos.js";
 
 const d = document;
 const pathImg = "images/estiramientos/vistas/";
 
 export function estiramiento(elemento) {
-  removeChild();
+  quitarHijos("root");
   crearContenedorPrincipal(elemento);
   eventos();
 }

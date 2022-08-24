@@ -1,5 +1,5 @@
 import { contenidoIntroduccion } from "../assets/introduccion-contenido.js";
-import { removeChild } from "../components/remove-child.js";
+import { quitarHijos } from "../components/quitar-hijos.js";
 
 const d = document;
 const pathImg = "images/inicio/principal/";
@@ -11,7 +11,7 @@ const textoInicio =
 let ir = Math.floor(Math.random() * contenidoIntroduccion.length);
 
 export function inicio() {
-  removeChild();
+  quitarHijos("root");
   crearContenedores();
 }
 

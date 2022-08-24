@@ -1,13 +1,13 @@
 import { fortalecimientosData } from "../assets/fortalecimientos-data.js";
 import { opcionLateral } from "../components/opcion-lateral.js";
-import { removeChild } from "../components/remove-child.js";
+import { quitarHijos } from "../components/quitar-hijos.js";
 import { fortalecimientos } from "./fortalecimientos.js";
 
 const d = document;
 const pathImg = "images/fortalecimientos/vistas/";
 
 export function fortalecimiento(elemento) {
-  removeChild();
+  quitarHijos("root");
   crearContenedorPrincipal(elemento);
   eventos();
 }

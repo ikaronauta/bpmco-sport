@@ -1,9 +1,9 @@
-import { removeChild } from "../components/remove-child.js";
+import { quitarHijos } from "../components/quitar-hijos.js";
 
 const d = document;
 
 export function pausasActivas() {
-  removeChild();
+  quitarHijos("root");
   proximamente();
 }
 

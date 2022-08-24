@@ -1,0 +1,10 @@
+.temporizador {
+  position: fixed;
+  left: 2rem;
+  top: 8rem;
+  width: 7rem;
+  height: 3rem;
+  background-color: var(--main-color);
+  border: 3px solid var(--dark-color);
+  border-radius: 10px;
+}
