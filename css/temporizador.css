@@ -20,9 +20,15 @@
   width: 2rem;
   height: 2rem;
   margin: 5px 3px;
-  background-color: rgb(205, 211, 199);
+  background-color: rgb(225, 231, 219);
   border-radius: 5px;
   border: 1px solid var(--dark-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1.1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedor-boton {
@@ -33,6 +39,7 @@
   border-radius: 50%;
   border: 1px solid var(--dark-color);
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   display: flex;
   justify-content: center;

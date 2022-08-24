@@ -113,14 +113,6 @@ h1 {
   text-align: center;
 }
 
-.atras {
-  width: 4rem;
-  position: fixed;
-  bottom: 8rem;
-  right: 2.5rem;
-  cursor: pointer;
-}
-
 .video {
   border-radius: 10px;
 }

@@ -25,6 +25,7 @@
   cursor: pointer;
   user-select: none;
   margin-top: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .icono-lateral {
