@@ -164,6 +164,5 @@ function reiniciar() {
 
 function rotar(item) {
   let val = item * 5.8;
-  console.log(val);
   d.getElementById("temporizador").style.transform = `rotate(${val}deg)`;
 }
