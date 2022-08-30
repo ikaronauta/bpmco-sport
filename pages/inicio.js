@@ -6,7 +6,7 @@ const pathImg = "images/inicio/principal/";
 const pathImgAutor = "images/inicio/autores/";
 const titulo = "Bienvenidos";
 const textoInicio =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non maximus diam. Fusce sagittis augue in mi elementum accumsan. Quisque vulputate velit non leo facilisis accumsan. Aenean gravida tortor id scelerisque elementum.";
+  "Este es un espacio destinado para fortalecer la cultura física y la salud dentro del espacio laboral, incentivando la actividad física, las pausas activas y demás actividades que puedan mejorar la calidad de vida de sus colaboradores.";
 
 let ir = Math.floor(Math.random() * contenidoIntroduccion.length);
 

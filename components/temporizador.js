@@ -27,26 +27,50 @@ export function temporizador() {
 }
 
 function filaTemporizador(temporizador) {
+  let segundosTitulo = d.createElement("p");
+  segundosTitulo.classList.add("temporizador-titulos");
+  segundosTitulo.innerHTML = "Segundos";
+
   let contSegundos = d.createElement("div");
   contSegundos.classList.add("contenedor-datos");
   contSegundos.setAttribute("id", "contenedor-segundos");
   contSegundos.innerHTML = "00";
+
+  let seg = d.createElement("div");
+  seg.appendChild(segundosTitulo);
+  seg.appendChild(contSegundos);
+
+  let minutosTitulo = d.createElement("p");
+  minutosTitulo.classList.add("temporizador-titulos");
+  minutosTitulo.innerHTML = "Minutos";
 
   let contMinutos = d.createElement("div");
   contMinutos.classList.add("contenedor-datos");
   contMinutos.setAttribute("id", "contenedor-minutos");
   contMinutos.innerHTML = "00";
 
+  let min = d.createElement("div");
+  min.appendChild(minutosTitulo);
+  min.appendChild(contMinutos);
+
+  let horasTitulo = d.createElement("p");
+  horasTitulo.classList.add("temporizador-titulos");
+  horasTitulo.innerHTML = "Horas";
+
   let contHoras = d.createElement("div");
   contHoras.classList.add("contenedor-datos");
   contHoras.setAttribute("id", "contenedor-horas");
   contHoras.innerHTML = "00";
 
+  let hor = d.createElement("div");
+  hor.appendChild(horasTitulo);
+  hor.appendChild(contHoras);
+
   let filaTemporizador = d.createElement("div");
   filaTemporizador.classList.add("fila-temporizador");
-  filaTemporizador.appendChild(contHoras);
-  filaTemporizador.appendChild(contMinutos);
-  filaTemporizador.appendChild(contSegundos);
+  filaTemporizador.appendChild(hor);
+  filaTemporizador.appendChild(min);
+  filaTemporizador.appendChild(seg);
 
   temporizador.appendChild(filaTemporizador);
 }
@@ -118,6 +142,7 @@ function iniciar() {
     if (segundos < 10) cero = "0";
     else cero = "";
     d.getElementById("contenedor-segundos").innerHTML = cero + segundos;
+    rotar(segundos);
   }, 1000);
 }
 
@@ -134,4 +159,11 @@ function reiniciar() {
   horas = 0;
   minutos = 0;
   segundos = 0;
+  d.getElementById("temporizador").style.transform = "rotate(0}deg)";
+}
+
+function rotar(item) {
+  let val = item * 5.8;
+  console.log(val);
+  d.getElementById("temporizador").style.transform = `rotate(${val}deg)`;
 }
