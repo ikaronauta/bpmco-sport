@@ -43,7 +43,39 @@ header {
 
 .bpmco,
 .sport {
+  z-index: 99999;
   cursor: pointer;
+}
+
+.bpmco {
+  height: 2.5rem;
+  width: auto;
+}
+
+.sport {
+  transform: rotate(-15deg);
+}
+
+.moving-line {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100vw;
+  height: 2px;
+  background-color: var(--third-color);
+  animation: moveLine 6s infinite ease-in-out;
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+  }
+  80% {
+    transform: translateX(100vw); /* Mueve la línea completamente hacia fuera de la pantalla a la derecha */
+  }
+  100% {
+    transform: translateX(100vw); /* Mantiene la línea fuera de la pantalla a la derecha durante 2 segundos */
+  }
 }
 
 .item-menu-container {
@@ -127,5 +159,10 @@ h1 {
 @media only screen and (max-width: 910px) {
   .container {
     width: 97%;
+  }
+
+  .bpmco {
+    height: 2rem;
+    width: auto;
   }
 }
